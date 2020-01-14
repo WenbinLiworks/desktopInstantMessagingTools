@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogRec</class>
+ <widget class="QDialog" name="DialogRec">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>92</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文件传输</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>60</y>
+     <width>158</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="okBtn">
+      <property name="text">
+       <string>是</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="noBtn">
+      <property name="text">
+       <string>否</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>okBtn</zorder>
+  <zorder>noBtn</zorder>
+  <zorder>label</zorder>
+  <zorder>noBtn</zorder>
+ </widget>
+ <resources>
+  <include location="../../rs/rs.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>noBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogRec</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>okBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogRec</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
