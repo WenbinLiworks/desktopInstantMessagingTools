@@ -1,2 +1,2 @@
 # desktopInstantMessagingTools
- desktop instant-messaging tool based on TCP/IP and Qt5
+ Desktop Instant-Messaging tool based on TCP/IP protocal and Qt5
